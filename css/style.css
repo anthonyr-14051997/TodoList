@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color_select : #C058F3;
+    --color_opac : #9495A5;
+}
+
+body {
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    background: #FFFAFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 100%;
+    height: auto;
+    background: #FFFAFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    width: 45vh;
+    height: 10vh;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 0px 10px 5px 0px #c2c3d681;
+    cursor: grab;
+}
+.bix {
+    width: 45vh;
+    height: 10vh;
+    display: flex;
+    align-self: center;
+}
+.bax {
+    width: 45vh;
+    height: 10vh;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 0px 10px 5px 0px #c2c3d681;
+    cursor: pointer;
+    margin: 5%;
+}
+.bux {
+    width: 45vh;
+    height: 10vh;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 0px 10px 5px 0px #c2c3d681;
+    cursor: pointer;
+    margin: 5%;
+}
+.shad {
+    box-shadow: 0px 10px 10px 0px #c2c3d681;
+}
+.circle_all {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    border: 2px solid #979797;
+    margin: 5%;
+}
+/* section add */
+.title {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    z-index: 2;
+}
+.title img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+h1 {
+    margin: 5%;
+    color: #FFFFFF;
+}
+.box_add {
+    margin: 5%;
+    width: 45vh;
+    height: 10vh;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 0px 10px 5px 0px #c2c3d681;
+}
+.box_text_add {
+    float: left;
+    margin: 5%;
+    border: none;
+    text-decoration: none!important;
+}
+.box_text_add::placeholder {
+    color: var(--color_opac);
+    font-family: 'Outfit', sans-serif;
+}
+/* section task */
+.task {
+    width: 100%;
+}
+.box_task {
+    margin-bottom: 2px;
+}
+.circle {
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+.box_task_text {
+    float: left;
+    margin: 5%;
+}
+.box_status {
+    margin-bottom: 5%;
+    width: 45vh;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.status_text {
+    width: 100%;
+    text-align: center;
+}
+/* section menu */
+
+.menu_text {
+    justify-content: space-around;
+    width: 45vh;
+    background: #FFFFFF;
+    margin-bottom: 5%;
+}
+.menu_text p {
+    margin: 5%;
+}
+.menu_text:focus p {
+    color: var(--color_select);
+}
+.bax p {
+    cursor: pointer;
+}
+.bax p:hover {
+    color: var(--color_select);
+}
+/* footer */
+footer {
+    background: #FFFAFF;
+    margin-top: 5%;
+    width: 100%;
+}
+.collab {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_opac);
+    background: #FFFAFF;
+}
+.collab img {
+    margin-left: 2%;
+}
+.collab_text {
+    align-content: center;
+}
+
+/* js action */
+.tchek_new {
+    margin: 5%;
+}
+.tchek {
+    display: none;
+    width: 4vh;
+    height: 4vh;
+}
+.tchek_block {
+    display: block;
+    width: 4vh;
+    height: 4vh;
+}
+
+
+/* responsive action */
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.over { 
+    border: 3px solid rgb(39, 187, 20);
+}
+
+/* @media all and (min-width:900px){
+    .responsive{
+        flex-direction: row;
+    }
+    .box {
+        width:90vh;
+    }
+    .bix {
+        width: 90vh;
+    }
+    .bax {
+        width: 90vh;
+    }
+    .bux {
+        margin-top: 5%;
+        margin-right: 0;
+    }
+    .menu {
+        margin: 0;
+    }
+} */
